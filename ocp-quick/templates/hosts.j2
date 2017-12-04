@@ -47,3 +47,6 @@ openshift_logging_image_version=v3.7
 [nodes]
 {{ hostvars[groups['master'][0]]['ansible_fqdn'] }}
 {{ hostvars[groups['node'][1]]['ansible_fqdn'] }}  openshift_node_labels="{'region': 'infra', 'zone': 'default'}"
+
+[nfs]
+{{ hostvars[groups['master'][0]]['ansible_fqdn'] }}
